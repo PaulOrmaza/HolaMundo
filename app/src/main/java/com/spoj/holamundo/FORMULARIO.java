@@ -29,7 +29,11 @@ public class FORMULARIO extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String nombre=edNombres.getText().toString();
-                if(!nombre.isEmpty()){
+                String apellidos=edApellidos.getText().toString();
+                String cedula=edCedula.getText().toString();
+                String direccion=edDireccion.getText().toString();
+                String correo=edCorreo.getText().toString();
+                if(!nombre.isEmpty() && !apellidos.isEmpty() && !cedula.isEmpty() && !direccion.isEmpty() && !correo.isEmpty()){
                     Toast.makeText(FORMULARIO.this, "Hola UwU", Toast.LENGTH_SHORT).show();
                 }
             }
